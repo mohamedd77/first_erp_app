@@ -1,0 +1,43 @@
+{
+ "doctype": "DocType",
+ "name": "Delivery Feedback",
+ "module": "My Custom App",
+ "custom": 0,
+ "istable": 0,
+ "editable_grid": 1,
+ "field_order": [
+  "customer",
+  "rating",
+  "note"
+ ],
+ "fields": [
+  {
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "label": "Customer",
+   "options": "Customer",
+   "reqd": 1
+  },
+  {
+   "fieldname": "rating",
+   "fieldtype": "Select",
+   "label": "Rating",
+   "options": "1\n2\n3\n4\n5",
+   "reqd": 1
+  },
+  {
+   "fieldname": "note",
+   "fieldtype": "Small Text",
+   "label": "Note"
+  }
+ ],
+ "permissions": [
+  {
+   "role": "System Manager",
+   "read": 1,
+   "write": 1,
+   "create": 1,
+   "delete": 1
+  }
+ ]
+}
