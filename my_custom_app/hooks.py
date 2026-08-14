@@ -248,6 +248,6 @@ app_license = "mit"
 # ignore_translatable_strings_from = []
 doc_events = {
 	"Sales Invoice": {
-		"before_save": "my_custom_app.hooks_handlers.on_sales_invoice_save"P
+		"before_save": "my_custom_app.hooks_handlers.on_sales_invoice_save"
 	}
 }

@@ -6,5 +6,15 @@ frappe.ui.form.on("Delivery Feedback", {
 			frm.set_df_property("note", "reqd", 0);
 		}
 		frm.refresh_field("note");
+	},
+
+	refresh: function(frm) {
+		if (!frm.doc.reviewed && !frm.is_new()) {
+			frm.add_custom_button("Mark as Reviewed", function() {
+				frm.call("mark_as_reviewed").then(() => {
+					frm.reload_doc();
+				});
+			});
+		}
 	}
 });

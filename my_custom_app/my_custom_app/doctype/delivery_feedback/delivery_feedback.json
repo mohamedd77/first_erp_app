@@ -8,7 +8,9 @@
  "field_order": [
   "customer",
   "rating",
-  "note"
+  "note",
+  "reviewed",
+  "workflow_state"
  ],
  "fields": [
   {
@@ -29,7 +31,20 @@
    "fieldname": "note",
    "fieldtype": "Small Text",
    "label": "Note"
-  }
+  },
+  {
+   "fieldname": "reviewed",
+   "fieldtype": "Check",
+   "label": "Reviewed",
+   "default": "0"
+  },
+  {
+   "fieldname": "workflow_state",
+   "fieldtype": "Link",
+   "label": "Workflow State",
+   "options": "Workflow State",
+   "read_only": 1
+}
  ],
  "permissions": [
   {
