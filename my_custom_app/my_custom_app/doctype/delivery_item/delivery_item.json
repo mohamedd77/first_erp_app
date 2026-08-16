@@ -1,0 +1,30 @@
+{
+ "doctype": "DocType",
+ "name": "Delivery Item",
+ "module": "My Custom App",
+ "custom": 0,
+ "istable": 1,
+ "editable_grid": 1,
+ "field_order": [
+  "item",
+  "qty"
+ ],
+ "fields": [
+  {
+   "fieldname": "item",
+   "fieldtype": "Link",
+   "label": "Item",
+   "options": "Item",
+   "in_list_view": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "qty",
+   "fieldtype": "Int",
+   "label": "Quantity",
+   "in_list_view": 1,
+   "reqd": 1
+  }
+ ],
+ "permissions": []
+}

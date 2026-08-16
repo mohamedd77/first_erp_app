@@ -10,7 +10,9 @@
   "rating",
   "note",
   "reviewed",
-  "workflow_state"
+  "workflow_state",
+  "items"
+
  ],
  "fields": [
   {
@@ -44,7 +46,14 @@
    "label": "Workflow State",
    "options": "Workflow State",
    "read_only": 1
-}
+  },
+  {
+   "fieldname": "items",
+   "fieldtype": "Table",
+   "label": "Items",
+   "options": "Delivery Item"
+  }
+
  ],
  "permissions": [
   {

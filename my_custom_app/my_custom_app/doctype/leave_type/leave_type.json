@@ -1,0 +1,36 @@
+{
+ "doctype": "DocType",
+ "name": "Leave Type",
+ "module": "My Custom App",
+ "custom": 0,
+ "istable": 0,
+ "editable_grid": 1,
+ "autoname": "field:leave_type_name",
+ "field_order": [
+  "leave_type_name",
+  "max_days_allowed"
+ ],
+ "fields": [
+  {
+   "fieldname": "leave_type_name",
+   "fieldtype": "Data",
+   "label": "Leave Type Name",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "max_days_allowed",
+   "fieldtype": "Int",
+   "label": "Max Days Allowed Per Year"
+  }
+ ],
+ "permissions": [
+  {
+   "role": "System Manager",
+   "read": 1,
+   "write": 1,
+   "create": 1,
+   "delete": 1
+  }
+ ]
+}
